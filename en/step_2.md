@@ -96,6 +96,15 @@ Now run your code. You should see the image appear on the screen. When you press
 
 --- /task ---
 
+--- collapse ---
+---
+title: Debug: The image is too big for my monitor!
+---
 
+You can resize images and display the resized image.
+
+
+
+--- /collapse ---
 
 --- save ---
