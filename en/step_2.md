@@ -40,6 +40,62 @@ Right click on this image, and save it to your home folder on the Raspberry Pi.
 
 ![an IR image of a park](images/park.png)
 
+--- /task ---
+
+--- task ---
+
+Then in Thonny you can start by importing the two modules you will need to begin with.
+
+--- code ---
+---
+language: python
+filename: ndvi.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 1-2
+---
+import cv2
+import numpy as np
+--- /code ---
 
 --- /task ---
 
+The next stage is to load an image and display it on the screen.
+
+--- task ---
+
+- `cv2.imread` is used to load an image
+- `cv2.namedWindow` is used to create a display window
+- `cv2.imshow` is used to show an image in a window.
+- `cv2.waitKey` stops the window from vanishing, until a key is pressed.
+
+Here is the code you will need.
+
+--- code ---
+---
+language: python
+filename: ndvi.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 4-7
+---
+import cv2
+import numpy as np
+
+original = cv2.imread('original.png')
+cv2.namedWindow('Display')
+cv2.imshow('Display', original)
+cv2.waitKey(0)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Now run your code. You should see the image appear on the screen. When you press a key it will disappear.
+
+--- /task ---
+
+
+
+--- save ---
