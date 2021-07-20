@@ -98,12 +98,28 @@ Now run your code. You should see the image appear on the screen. When you press
 
 --- collapse ---
 ---
-title: Debug: The image is too big for my monitor!
+title: "Debug: The image is too big for my monitor!"
 ---
 
 You can resize images and display the resized image.
 
+--- code ---
+---
+language: python
+filename: ndvi.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 6-7
+---
+import cv2
+import numpy as np
 
+original = cv2.imread('original.png')
+cv2.namedWindow('Display')
+resized = cv2.resize(original, (648, 488)) #resize the image
+cv2.imshow('Display', resized) #display the resized image
+cv2.waitKey(0)
+--- /code ---
 
 --- /collapse ---
 
