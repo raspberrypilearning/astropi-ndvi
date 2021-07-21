@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Contrast is the difference between brightness or colour in an image. The image below has been split so that the left half has a low contrast and the right side has a high contrast. You need to **increase** the contrast of your image for NDVI.
+Contrast is the difference between the brightness or colour in an image. The image below has been split so that the left half has a low contrast and the right side has a high contrast. You need to **increase** the contrast of your image for NDVI.
 <a title="Toniht at English Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Photo_editing_contrast_correction.jpg"><img width="512" alt="Photo editing contrast correction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Photo_editing_contrast_correction.jpg/512px-Photo_editing_contrast_correction.jpg"></a>
 </div>
 </div>
@@ -17,12 +17,13 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 6
+line_highlights: 7
 ---
 import cv2
 import numpy as np
 
 park = cv2.imread('park.png')
+
 
 def contrast_stretch(im):
 
@@ -44,8 +45,8 @@ Add these two lines to your function to find the top brightness of pixels in the
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 6 
-line_highlights: 7-8
+line_number_start: 7 
+line_highlights: 8-9
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -66,8 +67,8 @@ Add these lines to your function.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 6 
-line_highlights: 10-11
+line_number_start: 7 
+line_highlights: 11-12
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -90,8 +91,8 @@ Add these lines to stretch out the pixel values and return the contrasted image.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 6 
-line_highlights: 13-17
+line_number_start: 7 
+line_highlights: 14-18
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -121,12 +122,13 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 19, 22
+line_highlights: 20, 23
 ---
 import cv2
 import numpy as np
 
 park = cv2.imread('park.png')
+
 
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -162,8 +164,8 @@ You can save your high contrast image by adding a single line to the end of your
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 27 
-line_highlights: 27
+line_number_start: 25 
+line_highlights: 25
 ---
 cv2.imwrite('contrasted.png', contrasted)
 --- /code ---
