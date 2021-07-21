@@ -3,7 +3,7 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 Now that you have a high contrast image, it's time to do the NDVI calculations. This will take the all the blue pixels and make them brighter and make all the red pixels darker, leaving an image that will be black and white, with the brightest pixels indicating healthy plants and the darkest pixels indicating unhealthy plants or an absence of plants.
-<a title="Toniht at English Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Photo_editing_contrast_correction.jpg"><img width="512" alt="Photo editing contrast correction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Photo_editing_contrast_correction.jpg/512px-Photo_editing_contrast_correction.jpg"></a>
+![4 images side by side, the original park, the contrasted park, the ndvi and the contrasted ndvi](images/ndvi-contrasts.png)</a>
 </div>
 </div>
 
@@ -134,6 +134,8 @@ cv2.imwrite('ndvi.png', ndvi)
 
 --- /task ---
 
+--- task ---
+
 If you  have a look at your NDVI image, it will probably be pretty dark, although you might catch patches of brighter pixels. To once again enhance the image, it can be run through the `contrast_stretch` function.
 
 --- code ---
@@ -153,4 +155,8 @@ cv2.imwrite('ndvi.png', ndvi)
 cv2.imwrite('ndvi_contrasted.png', ndvi_contrasted)
 --- /code ---
 
-![4 images side by side, the original park, the contrasted park, the ndvi and the contrasted ndvi](images/ndvi-contrasts.png)
+Now you can see healthy plant life by the brightness of the pixels in the `ndvi_contrasted.png` image.
+
+--- /task ---
+
+--- save ---
