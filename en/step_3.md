@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To turn an image from one that has had no IR filter, to an NDVI colour mapped image, you're going to use a graphics module called OpenCV.
+To turn an image from one that has had no IR filter, to an NDVI image, you're going to use a graphics module called OpenCV.
 </div>
 </div>
 
@@ -19,7 +19,7 @@ This project requires some extra Python packages to perform some calculations on
 In the terminal type:
 
 ```bash
-sudo pip3 install numpy openvc-python3
+sudo pip3 install numpy opencv-python3
 ```
 
 The packages should install after a few minutes.
@@ -62,13 +62,12 @@ import numpy as np
 
 The next stage is to load an image and display it on the screen.
 
---- task ---
-
 - `cv2.imread` is used to load an image
 - `cv2.namedWindow` is used to create a display window
 - `cv2.imshow` is used to show an image in a window.
 - `cv2.waitKey` stops the window from vanishing, until a key is pressed.
 
+--- task ---
 Here is the code you will need.
 
 --- code ---
@@ -82,10 +81,10 @@ line_highlights: 4-7
 import cv2
 import numpy as np
 
-original = cv2.imread('original.png')
-cv2.namedWindow('Display')
-cv2.imshow('Display', original)
-cv2.waitKey(0)
+park = cv2.imread('/home/pi/park.png') # load image
+cv2.namedWindow('Display') # create window
+cv2.imshow('Display', park) # display image
+cv2.waitKey(0) # wait for key press
 --- /code ---
 
 --- /task ---
@@ -114,10 +113,10 @@ line_highlights: 6-7
 import cv2
 import numpy as np
 
-original = cv2.imread('original.png')
+park = cv2.imread('/home/pi/park.png')
 cv2.namedWindow('Display')
-resized = cv2.resize(original, (648, 488)) #resize the image
-cv2.imshow('Display', resized) #display the resized image
+resized = cv2.resize(park, (648, 488)) #resize image
+cv2.imshow('Display', resized) #display resized image
 cv2.waitKey(0)
 --- /code ---
 
