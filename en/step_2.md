@@ -28,7 +28,7 @@ derivative work: M0tty, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by
 
 Modern cameras can detect many of the different types of light. Because a picture from a digital camera, that also showed infrared light, would look a little odd to the human eye, they have special filters added to them, so that infrared light can't reach the sensor. You can see an image below of a park, taken with the infrared filter removed.
 
-![park photo taken without an IR filter](images/original.png)
+![park photo taken without an IR filter](images/montage.png)
 
 This is really useful for measuring the health of plants. If a plant is healthy, it will reflect a lot of infrared light. If a plant is dying, it will absorb a lot of infrared light. The blue-green colour in the photos means more infrared light is being reflected.
 
