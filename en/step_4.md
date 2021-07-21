@@ -16,7 +16,7 @@ Create a new function called `contrast_stretch`. It will have a single parameter
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start:1 
+line_number_start: 1 
 line_highlights: 6
 ---
 import cv2
@@ -44,7 +44,7 @@ Add these two lines to your function to find the top brightness of pixels in the
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start:6 
+line_number_start: 6 
 line_highlights: 7-8
 ---
 def contrast_stretch(im):
@@ -66,7 +66,7 @@ Add these lines to your function.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start:6 
+line_number_start: 6 
 line_highlights: 10-11
 ---
 def contrast_stretch(im):
@@ -90,7 +90,7 @@ Add these lines to stretch out the pixel values and return the contrasted image.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start:6 
+line_number_start: 6 
 line_highlights: 13-17
 ---
 def contrast_stretch(im):
@@ -120,7 +120,7 @@ Call you `contrast_stretch` function and alter the code so that it is displayed.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start:1 
+line_number_start: 1 
 line_highlights: 19, 22
 ---
 import cv2
@@ -162,7 +162,7 @@ You can save your high contrast image by adding a single line to the end of your
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start:27 
+line_number_start: 27 
 line_highlights: 27
 ---
 cv2.imwrite('contrasted.png', contrasted)
