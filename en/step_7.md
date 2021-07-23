@@ -30,7 +30,8 @@ title: Converting your Raspberry Pi HQ Camera with an R26 Red filter
 - You will need to purchase a sheet of [Rosculux 26: Light Red filters](https://www.pnta.com/expendables/gels/roscolux/roscolux-26-light-red/).
 - Follow [this guide](https://www.raspberrypi.org/documentation/hardware/camera/hqcam_filter_removal.md) to remove the IR filter from your Raspberry Pi HQ Camera. **This will void the warranty**. 
 - The red filter can be tapped to the front of your HQ camera lens or held in place with a [3D printed part](images/stlfilehere.stl), as shown below.
-![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/3D_print_filter.png)
+
+![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/3D_print_filter.jpg)
 
 --- /collapse ---
 
