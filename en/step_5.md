@@ -3,7 +3,7 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 Now that you have a high contrast image, it's time to do the NDVI calculations. This will take the all the blue pixels and make them brighter and make all the red pixels darker, leaving an image that will be black and white, with the brightest pixels indicating healthy plants and the darkest pixels indicating unhealthy plants or an absence of plants.
-![4 images side by side, the original park, the contrasted park, the ndvi and the contrasted ndvi](images/ndvi-contrasts.png)</a>
+![4 images side by side, the original park, the contrasted park, the ndvi and the contrasted ndvi](images/ndvi-contrasts.png)
 </div>
 </div>
 
