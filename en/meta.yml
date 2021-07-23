@@ -11,6 +11,7 @@ steps:
   - title: Load and display images with Python
   - title: Increasing the contrast
   - title: Calculating NDVI
+  - title: Colour mapping
  # - title: Reflection
   #  knowledge_quiz:
   #   version: 1
