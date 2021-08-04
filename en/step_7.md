@@ -202,4 +202,22 @@ cv2.imwrite('color_mapped.png', color_mapped_image)
 This image shows all the captures of a dying basil plant. You can see that at the base of the plant, the leaves are either dying or dead, where as near the top, there are still some healthy leaves.
 ![dying plant shown with all the various stages of capture](images/dying_plant.png)
 
+--- collapse ---
+---
+title: Debug - the images from my camera appear red
+---
+
+This is a known issue but there is an easy fix.
+
+- Press **Ctrl + Alt + t** to open up a terminal window.
+- Type the following to edit your `config.txt`:
+```bash
+sudo nano /boot/config.txt
+```
+- Add the following line to the bottom of the file `awb_auto_is_greyworld=1`
+- Press **Ctrl + O** to save the file and **Ctrl + X** to exit nano.
+- You can now close the terminal window, and try to take pictures again.
+
+
+--- /collapse ---
 --- save ---

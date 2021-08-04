@@ -19,7 +19,9 @@ This project requires some extra Python packages to perform some calculations on
 In the terminal type:
 
 ```bash
-sudo pip3 install numpy opencv-python3
+sudo pip3 install -U numpy
+sudo pip3 install opencv-python
+sudo apt install libatlas-base-dev
 ```
 
 The packages should install after a few minutes.
@@ -122,22 +124,4 @@ cv2.waitKey(0)
 
 --- /collapse ---
 
---- collapse ---
----
-title: Debug - the images from my camera appear red
----
-
-This is a known issue but there is an easy fix.
-
-- Press **Ctrl + Alt + t** to open up a terminal window.
-- Type the following to edit your `config.txt`:
-```bash
-sudo nano /boot/config.txt
-```
-- Add the following line to the bottom of the file `awb_auto_is_greyworld=1`
-- Press **Ctrl + O** to save the file and **Ctrl + X** to exit nano.
-- You can now close the terminal window, and try to take pictures again.
-
-
---- /collapse ---
 --- save ---

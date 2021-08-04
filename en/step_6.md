@@ -15,7 +15,7 @@ The [fastie](https://storage.googleapis.com/publiclab-production/public/system/i
 
 --- task ---
 
-Download the [fastiecm.py](images/fastiecm.py) colour map. Save it in the same place as your `ndvi.py` file is saved.
+Download the [fastiecm.py](images/fastiecm.py){:target='_blank'} colour map. Save it in the same place as your `ndvi.py` file is saved.
 
 --- /task ---
 

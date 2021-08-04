@@ -37,7 +37,7 @@ Modern cameras can detect many of the different types of light. Because a pictur
 ![park photo taken without an IR filter](images/park.png)
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-There are different types of infrared light. The type of cameras that can do thermal imaging, are actually capturing longwave infrared light. This is different to the shortwave infrared light that needs to be filtered out by digital cameras.
+There are different types of infrared light. The type of cameras that can do thermal imaging, are actually capturing longwave infrared light. This is different to the shortwave infrared light (Near Infrared) that needs to be filtered out by digital cameras.
 </p>
 
 This is really useful for measuring the health of plants. If a plant is healthy, it will reflect a lot of infrared light. If a plant is dying, it will absorb a lot of infrared light. The blue-green colour in the photo means more infrared light is being reflected.
