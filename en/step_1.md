@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will learn how to use images, taken with a camera fitted with special filters, to measure the health of plants. If you have access to a Raspberry Pi Camera module, you will also learn how to modify it so it can be used to take these photos.
+In this project, you will learn how to use images, taken with a camera fitted with special filters, to measure the health of plants. If you have access to a [Raspberry Pi High Quality Camera](https://www.raspberrypi.org/products/raspberry-pi-high-quality-camera/), you will also learn how to modify it so it can be used to take these photos. If you have access to a [Pi NoIR camera module](https://www.raspberrypi.org/products/pi-noir-camera-v2/), this can be used to.
 
 ![three images showing the three stages of processing photos to get a measure of plant health](images/montage.png)
 
