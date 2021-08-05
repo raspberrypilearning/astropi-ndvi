@@ -38,7 +38,7 @@ from fastiecm import fastiecm
 
 --- /task ---
 
-The current image, that you have saved as `ndvi_contrasted` is not suitable for colour mapping. The numbers stored in the `numpy` array are currently all `floats` or what is commonly known decimal numbers. They all need converting to whole numbers, or `integers` between `0` and `255`. The `numpy` libray can luckily do this for us.
+The current image, that you have saved as `ndvi_contrasted` is not suitable for colour mapping. The numbers stored in the `numpy` array are currently all `floats` or what is commonly known decimal numbers. They all need converting to whole numbers, or `integers` between `0` and `255`. The `numpy` library can luckily do this for us.
 
 --- task ---
 
