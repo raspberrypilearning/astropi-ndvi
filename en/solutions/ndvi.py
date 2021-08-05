@@ -14,17 +14,6 @@ original = stream.array
 #original = cv2.imread('/home/pi/park.png')
 
 
-def display(image, image_name):
-    image = np.array(image, dtype=float)/float(255)
-    shape = image.shape
-    height = int(shape[0] / 2)
-    width = int(shape[1] / 2)
-    image = cv2.resize(image, (width, height))
-    cv2.namedWindow(image_name)
-    cv2.imshow(image_name, image)
-    cv2.waitKey(0)
-    
-    
 def contrast_stretch(image):
     in_min = np.percentile(image, 5)
     in_max = np.percentile(image, 95)
@@ -39,6 +28,17 @@ def contrast_stretch(image):
     return out
 
 
+def display(image, image_name):
+    image = np.array(image, dtype=float)/float(255)
+    shape = image.shape
+    height = int(shape[0] / 2)
+    width = int(shape[1] / 2)
+    image = cv2.resize(image, (width, height))
+    cv2.namedWindow(image_name)
+    cv2.imshow(image_name, image)
+    cv2.waitKey(0)
+
+    
 def calc_ndvi(image):
     b,g,r = cv2.split(image)
     bottom = (r.astype(float) + b.astype(float))

@@ -22,14 +22,14 @@ line_highlights: 7
 import cv2
 import numpy as np
 
-park = cv2.imread('park.png')
+original = cv2.imread('/home/pi/park.png')
 
 
 def contrast_stretch(im):
 
-cv2.namedWindow('Display') # create window
-cv2.imshow('Display', park) # display image
-cv2.waitKey(0) # wait for key press
+
+def display(image, image_name):
+    image = np.array(image, dtype=float)/float(255)
 --- /code ---
 
 --- /task ---
@@ -114,40 +114,19 @@ Now that you have a function to stretch the contrast of the image, you can conve
 
 --- task ---
 
-Call you `contrast_stretch` function and alter the code so that it is displayed.
+Call you `contrast_stretch` function and alter then display it using your `display` function.
 
 --- code ---
 ---
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 1 
-line_highlights: 20, 23
+line_number_start: 32 
+line_highlights: 33, 34
 ---
-import cv2
-import numpy as np
-
-park = cv2.imread('park.png')
-
-
-def contrast_stretch(im):
-    in_min = np.percentile(im, 5)
-    in_max = np.percentile(im, 95)
-    
-    out_min = 0.0
-    out_max = 255.0
-    
-    out = im - in_min
-    out *= ((out_min - out_max) / (in_min - in_max))
-    out += in_min
-    
-    return out
-
+display(original, 'Original')
 contrasted = contrast_stretch(park)
-
-cv2.namedWindow('Display')
-cv2.imshow('Display', contrasted)
-cv2.waitKey(0)
+display(contrasted, 'Contrasted original')
 --- /code ---
 --- /task ---
 
@@ -164,9 +143,12 @@ You can save your high contrast image by adding a single line to the end of your
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 25 
-line_highlights: 25
+line_number_start: 32 
+line_highlights: 35
 ---
+display(original, 'Original')
+contrasted = contrast_stretch(park)
+display(contrasted, 'Contrasted original')
 cv2.imwrite('contrasted.png', contrasted)
 --- /code ---
 
