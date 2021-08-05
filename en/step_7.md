@@ -40,10 +40,10 @@ title: Converting your Raspberry Pi HQ Camera with an R26 Red filter
 
 --- collapse ---
 ---
-title: Using the Raspberry Pi Noir Camera module
+title: Using the Raspberry Pi NoIR Camera module
 ---
 
-You can use the Raspberry Pi Noir camera module for NDVI images, however, you will need to change one of your lines of code. This is because the Pi Noir camera uses a blue, instead of a red filter.
+You can use the Raspberry Pi NoIR camera module for NDVI images, however, you will need to change one of your lines of code. This is because the Pi NoIR camera uses a blue, instead of a red filter. The red filter is better for capturing NDVI images, but the same kind of effect can be accomplished with a Pi NoIR. Instead of subtracting the red channel from the image, you subtract the blue channel.
 
 The line is highlighted and commented in the script below.
 
@@ -169,10 +169,7 @@ sudo nano /boot/config.txt
 - Press **Ctrl + O** to save the file and **Ctrl + X** to exit nano.
 - You can now close the terminal window, restart your Raspberry Pi and try to take pictures again.
 
-
 --- /collapse ---
-
-
 
 --- save ---
 

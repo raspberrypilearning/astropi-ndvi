@@ -13,6 +13,7 @@ steps:
   - title: Calculating NDVI
   - title: Colour mapping
   - title: Create your own NDVI images
+  - title: Mission Space Lab
  # - title: Reflection
   #  knowledge_quiz:
   #   version: 1
