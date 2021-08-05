@@ -49,12 +49,18 @@ Add the highlighted line to convert your array.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 29
-line_highlights: 32
+line_number_start: 40
+line_highlights: 49
 ---
-contrasted = contrast_stretch(park)
+display(original, 'Original')
+contrasted = contrast_stretch(original)
+display(contrasted, 'Contrasted original')
+cv2.imwrite('contrasted.png', contrasted)
 ndvi = calc_ndvi(contrasted)
+display(ndvi, 'NDVI')
 ndvi_contrasted = contrast_stretch(ndvi)
+display(ndvi_contrasted, 'NDVI Contrasted')
+cv2.imwrite('ndvi_contrasted.png', ndvi_contrasted)
 color_mapped_prep = ndvi_contrasted.astype(np.uint8)
 --- /code ---
 
@@ -64,26 +70,20 @@ Now the image can be converted using `cv2` colour mapping, and written out as a 
 
 --- task ---
 
-Add the highlighted lines below, to convert the image using the fastie colour map, and write a new file.
+Add the highlighted lines below, to convert the image using the fastie colour map, display it, and write a new file.
 
 --- code ---
 ---
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 29
-line_highlights: 33, 38
+line_number_start: 49
+line_highlights: 50-52
 ---
-contrasted = contrast_stretch(park)
-ndvi = calc_ndvi(contrasted)
-ndvi_contrasted = contrast_stretch(ndvi)
 color_mapped_prep = ndvi_contrasted.astype(np.uint8)
 color_mapped_image = cv2.applyColorMap(color_mapped_prep, fastiecm)
-
-cv2.imwrite('contrasted.png', contrasted)
-cv2.imwrite('ndvi.png', ndvi)
-cv2.imwrite('ndvi_contrasted.png', ndvi_contrasted)
-cv2.imwrite('color_mapped.png', color_mapped_image)
+display(color_mapped_image, 'Color mapped')
+cv2.imwrite('color_mapped_image.png', color_mapped_image)
 --- /code ---
 
 --- /task ---

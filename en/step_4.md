@@ -17,7 +17,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 1 
-line_highlights: 7
+line_highlights: 18
 ---
 import cv2
 import numpy as np
@@ -25,11 +25,17 @@ import numpy as np
 original = cv2.imread('/home/pi/park.png')
 
 
-def contrast_stretch(im):
-
-
 def display(image, image_name):
     image = np.array(image, dtype=float)/float(255)
+    shape = image.shape
+    height = int(shape[0] / 2)
+    width = int(shape[1] / 2)
+    image = cv2.resize(image, (width, height))
+    cv2.namedWindow(image_name)
+    cv2.imshow(image_name, image)
+    cv2.waitKey(0)
+
+def contrast_stretch(im):
 --- /code ---
 
 --- /task ---
@@ -45,8 +51,8 @@ Add these two lines to your function to find the top brightness of pixels in the
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 7 
-line_highlights: 8-9
+line_number_start: 18 
+line_highlights: 19-20
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -67,8 +73,8 @@ Add these lines to your function.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 7 
-line_highlights: 11-12
+line_number_start: 18 
+line_highlights: 22-23
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -91,8 +97,8 @@ Add these lines to stretch out the pixel values and return the contrasted image.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 7 
-line_highlights: 14-18
+line_number_start: 18 
+line_highlights: 25-29
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -125,7 +131,7 @@ line_number_start: 32
 line_highlights: 33, 34
 ---
 display(original, 'Original')
-contrasted = contrast_stretch(park)
+contrasted = contrast_stretch(original)
 display(contrasted, 'Contrasted original')
 --- /code ---
 --- /task ---

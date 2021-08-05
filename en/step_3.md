@@ -80,7 +80,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 4-8
+line_highlights: 4-9
 ---
 import cv2
 import numpy as np
@@ -149,7 +149,8 @@ cv2.namedWindow('Original') # create window
 
 --- task ---
 
-As you will want to be displaying other images as well, you can turn the code you have written into a function, and call it
+As you will want to be displaying other images as well, you can turn the code you have written into a function, and call it. The function will take an **image object** and also a **string** that describes the image.
+
 Here is the complete code, so far.
 
 --- code ---

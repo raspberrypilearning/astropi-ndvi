@@ -40,7 +40,7 @@ title: Converting your Raspberry Pi HQ Camera with an R26 Red filter
 title: Using the Raspberry Pi Noir Camera module
 ---
 
-You can use the Raspberry Pi Noir camera module for NDVI images, however, you will need to change one of your lines of code. This is becuase the Pi Noir camera uses a blue, instead of a red filter.
+You can use the Raspberry Pi Noir camera module for NDVI images, however, you will need to change one of your lines of code. This is because the Pi Noir camera uses a blue, instead of a red filter.
 
 The line is highlighted and commented in the script below.
 
@@ -49,47 +49,15 @@ The line is highlighted and commented in the script below.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 
-line_highlights: 26
+line_number_start: 31
+line_highlights: 35
 ---
-import cv2
-import numpy as np
-from fastiecm import fastiecm
-
-park = cv2.imread('park.png')
-
-
-def contrast_stretch(im):
-    in_min = np.percentile(im, 5)
-    in_max = np.percentile(im, 95)
-    
-    out_min = 0.0
-    out_max = 255.0
-    
-    out = im - in_min
-    out *= ((out_min - out_max) / (in_min - in_max))
-    out += in_min
-    
-    return out
-
-
 def calc_ndvi(image):
     b, g, r = cv2.split(image)
     bottom = (r.astype(float) + b.astype(float))
     bottom[bottom==0] = 0.01
     ndvi = (r.astype(float) - b) / bottom # THIS IS THE CHANGED LINE
     return ndvi
-
-contrasted = contrast_stretch(park)
-ndvi = calc_ndvi(contrasted)
-ndvi_contrasted = contrast_stretch(ndvi)
-color_mapped_prep = ndvi_contrasted.astype(np.uint8)
-color_mapped_image = cv2.applyColorMap(color_mapped_prep, fastiecm)
-
-cv2.imwrite('contrasted.png', contrasted)
-cv2.imwrite('ndvi.png', ndvi)
-cv2.imwrite('ndvi_contrasted.png', ndvi_contrasted)
-cv2.imwrite('color_mapped.png', color_mapped_image)
 --- /code ---
 
 --- /collapse ---
@@ -119,15 +87,15 @@ line_highlights: 4,5,7,8,9,10
 import cv2
 import numpy as np
 from fastiecm import fastiecm
-import picamera
+from picamera import PiCamera
 import picamera.array
 
-cam = picamera.PiCamera()
+cam = PiCamera()
 cam.rotation = 180
 # cam.resolution = (1920, 1080) # Uncomment if using a Pi Noir camera
 cam.resolution = (2592, 1952) # Comment this line if using a Pi Noir camera
 
-# park = cv2.imread('park.png') #Comment out this line, as no longer used
+# original = cv2.imread('park.png') #Comment out this line, as no longer used
 --- /code ---
 
 --- /task ---
@@ -136,65 +104,45 @@ Rather than just capture an image with the camera and save it to the SD card, th
 
 --- task ---
 
-Capture a stream and save it as an array. These lines can be called after you `contrast_stretch` and `calc_ndvi` functions.
+Capture a stream and save it as an array.
 
 --- code ---
 ---
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 35
-line_highlights: 36-38
+line_number_start: 7
+line_highlights: 11-13
 ---
-
+cam = PiCamera()
+cam.rotation = 180
+# cam.resolution = (1920, 1080) # Uncomment if using a Pi Noir camera
+cam.resolution = (2592, 1952) # Comment this line if using a Pi Noir camera
 stream = picamera.array.PiRGBArray(cam)
 cam.capture(stream, format='bgr', use_video_port=True)
-image = stream.array
-
+original = stream.array
+# original = cv2.imread('park.png') #Comment out this line, as no longer used
 --- /code ---
 
 --- /task ---
 
-Instead of the contrast_stretch function being run on the `park` object, it will now be run on the `image` object.
+Instead of the contrast_stretch function being run on the `original` image object that you loaded, it will now be run on the saved stream, which is also called `original`
 
 --- task ---
 
-Edit the line highlighted and commented below, so that the `image` object is passed into the `contrast_stretch` function.
+Add a line near the end of your code, so that you can also write out the `original` array to a file.
 
 --- code ---
 ---
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 37
-line_highlights: 40
+line_number_start: 60
+line_highlights: 62
 ---
-cam.capture(stream, format='bgr', use_video_port=True)
-image = stream.array
-
-contrasted = contrast_stretch(image) #load image and not park
-ndvi = calc_ndvi(contrasted)
---- /code ---
-
---- /task ---
-
---- task ---
-
-Add a line near the end of your code, to write out the original image to a file.
-
---- code ---
----
-language: python
-filename: ndvi.py
-line_numbers: true
-line_number_start: 46 
-line_highlights: 46
----
-cv2.imwrite('original.png', image)
-cv2.imwrite('contrasted.png', contrasted)
-cv2.imwrite('ndvi.png', ndvi)
-cv2.imwrite('ndvi_contrasted.png', ndvi_contrasted)
-cv2.imwrite('color_mapped.png', color_mapped_image)
+display(color_mapped_image, 'Color mapped')
+cv2.imwrite('color_mapped_image.png', color_mapped_image)
+cv2.imwrite('original.png', original)
 --- /code ---
 
 --- /task ---
@@ -216,7 +164,7 @@ sudo nano /boot/config.txt
 ```
 - Add the following line to the bottom of the file `awb_auto_is_greyworld=1`
 - Press **Ctrl + O** to save the file and **Ctrl + X** to exit nano.
-- You can now close the terminal window, and try to take pictures again.
+- You can now close the terminal window, restart your Raspberry Pi and try to take pictures again.
 
 
 --- /collapse ---
