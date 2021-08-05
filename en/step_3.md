@@ -147,8 +147,11 @@ cv2.namedWindow('Original') # create window
 
 --- /task ---
 
+--- task ---
+
 As you will want to be displaying other images as well, you can turn the code you have written into a function, and call it
 Here is the complete code, so far.
+
 --- code ---
 ---
 language: python
@@ -176,5 +179,7 @@ def display(image, image_name):
 
 display(original, 'Original')
 --- /code ---
+
+--- /task ---
 
 --- save ---
