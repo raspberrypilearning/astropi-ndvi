@@ -49,8 +49,8 @@ Add the highlighted line to convert your array.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 40
-line_highlights: 49
+line_number_start: 41
+line_highlights: 50
 ---
 display(original, 'Original')
 contrasted = contrast_stretch(original)
@@ -77,8 +77,8 @@ Add the highlighted lines below, to convert the image using the fastie colour ma
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 49
-line_highlights: 50-52
+line_number_start: 50
+line_highlights: 51-53
 ---
 color_mapped_prep = ndvi_contrasted.astype(np.uint8)
 color_mapped_image = cv2.applyColorMap(color_mapped_prep, fastiecm)

@@ -159,7 +159,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 7-14
+line_highlights: 7-19
 ---
 import cv2
 import numpy as np
@@ -176,6 +176,7 @@ def display(image, image_name):
     cv2.namedWindow(image_name)
     cv2.imshow(image_name, image)
     cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 
 display(original, 'Original')

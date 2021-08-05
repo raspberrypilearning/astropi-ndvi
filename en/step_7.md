@@ -16,7 +16,7 @@ title: Converting your Raspberry Pi HQ Camera with a RED + Near IR filter
 - Follow [this guide](https://www.raspberrypi.org/documentation/hardware/camera/hqcam_filter_removal.md) to remove the IR filter from your Raspberry Pi HQ Camera. **This will void the warranty**. 
 - Follow this video guide to install your filter in your camera.
  <video width="320" height="240" controls>
-  <source src="images/fit_filter.mp4" type="video/mp4">
+  <source src="images/MidOpt_Filter_Install_HQC.mp4" type="video/mp4">
   Your browser does not support mp4 files.
 </video> 
 
@@ -29,9 +29,12 @@ title: Converting your Raspberry Pi HQ Camera with an R26 Red filter
 
 - You will need to purchase a sheet of [Rosculux 26: Light Red filters](https://www.pnta.com/expendables/gels/roscolux/roscolux-26-light-red/).
 - Follow [this guide](https://www.raspberrypi.org/documentation/hardware/camera/hqcam_filter_removal.md) to remove the IR filter from your Raspberry Pi HQ Camera. **This will void the warranty**. 
-- The red filter can be tapped to the front of your HQ camera lens or held in place with a [3D printed part](images/stlfilehere.stl), as shown below.
+- The red filter can be taped to the front of your HQ camera lens or held in place with a 3D printed part
+- You can download the [STL](images/lens_holder.stl) [OBJ](images/lens_holder.obj) or [SVG](images/lens_holder.svg) and print or laser cut the part yourself.
 
-![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/3D_print_filter.jpg)
+![a red filter attached to a 3D printed plastic ring](images/lens_holder_1.png)
+![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/lens_holder_2.png)
+![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/lens_holder_3.png)
 
 --- /collapse ---
 
@@ -49,8 +52,8 @@ The line is highlighted and commented in the script below.
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 31
-line_highlights: 35
+line_number_start: 32
+line_highlights: 36
 ---
 def calc_ndvi(image):
     b, g, r = cv2.split(image)
@@ -137,8 +140,8 @@ Add a line near the end of your code, so that you can also write out the `origin
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 60
-line_highlights: 62
+line_number_start: 61
+line_highlights: 63
 ---
 display(color_mapped_image, 'Color mapped')
 cv2.imwrite('color_mapped_image.png', color_mapped_image)
@@ -168,4 +171,8 @@ sudo nano /boot/config.txt
 
 
 --- /collapse ---
+
+
+
 --- save ---
+

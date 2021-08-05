@@ -16,8 +16,8 @@ Create a new function and call it `calc_ndvi`. It will take a `cv2` image as a p
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 18
-line_highlights: 31
+line_number_start: 19
+line_highlights: 32
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -49,8 +49,8 @@ Add this line to your function.
 language: python
 filename: 
 line_numbers: true
-line_number_start: 31
-line_highlights: 32
+line_number_start: 32
+line_highlights: 33
 ---
 def calc_ndvi(image):
     b, g, r = cv2.split(image)
@@ -69,8 +69,8 @@ Add these lines to you function to perform the calculation.
 language: python
 filename: 
 line_numbers: true
-line_number_start: 31
-line_highlights: 33-36
+line_number_start: 32
+line_highlights: 34-37
 ---
 def calc_ndvi(image):
     b, g, r = cv2.split(image)
@@ -93,8 +93,8 @@ Now that you have a function to calculate NDVI, you can pass in the contrasted i
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 39
-line_highlights: 43-45
+line_number_start: 40
+line_highlights: 44-46
 ---
 display(original, 'Original')
 contrasted = contrast_stretch(park)
@@ -116,8 +116,8 @@ If you  have a look at your NDVI image, it will probably be pretty dark, althoug
 language: python
 filename: ndvi.py
 line_numbers: true
-line_number_start: 39
-line_highlights: 45-47
+line_number_start: 40
+line_highlights: 46-48
 ---
 display(original, 'Original')
 contrasted = contrast_stretch(original)
