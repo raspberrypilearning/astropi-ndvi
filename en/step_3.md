@@ -38,7 +38,7 @@ To begin with, you are simply going to load an image and display it on your scre
 
 --- task ---
 
-Right click on this image, and save it to your home folder on the Raspberry Pi.
+Right click on this image, and save it to your home folder on your Raspberry Pi.
 
 ![An infrared image of a park.](images/park.png)
 
