@@ -21,7 +21,7 @@ Chlorophyll can't use all of the sun's light though. Light from the sun comes in
 - Ultraviolet (UV) light is invisible to humans. It's a type of light that can cause you to get a sunburn.
 - Infrared (IR) light is also invisible to humans, but it's the reason you can feel heat when you place your hands in front of a fire.
 
-There are also other forms of light that you might have heard of, such as microwaves, radio waves, x-rays and gamma rays.
+There are also other forms of light that you might have heard of, such as microwaves, radio waves, x-rays, and gamma rays.
 
 <a title="Philip Ronan, Gringer, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:EM_spectrumrevised.png"><img width="512" alt="EM spectrumrevised" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/EM_spectrumrevised.png/512px-EM_spectrumrevised.png"></a>
 
@@ -37,7 +37,7 @@ Modern cameras can detect many of the different types of light. Because a pictur
 ![Park photo taken without an infrared filter.](images/park.png)
 
 <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-There are different types of infrared light. The type of cameras that can do thermal imaging are actually capturing longwave infrared light. This is different to the shortwave infrared light (Near Infrared) that needs to be filtered out by digital cameras.
+There are different types of infrared light. Cameras that can do thermal imaging are actually capturing longwave infrared light. This is different to the shortwave infrared light (Near Infrared) that needs to be filtered out by digital cameras.
 </p>
 
 This is really useful for measuring the health of plants. If a plant is healthy, it will reflect a lot of infrared light. If a plant is dying, it will absorb a lot of infrared light. The blue-green colour in the photo means more infrared light is being reflected.
