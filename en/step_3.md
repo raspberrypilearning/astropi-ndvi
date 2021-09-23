@@ -8,7 +8,7 @@ To turn an image from one that has had no IR filter, to an NDVI image, you're go
 
 --- task ---
 
-On your Raspberry Pi, open a terminal by pressing and holding the **Ctrl** and **Alt** keys and then pressing the **t** key.
+On your Raspberry Pi, open a terminal by pressing and holding the **Ctrl** and **Alt** keys, and then pressing the **t** key.
 
 --- /task ---
 
@@ -34,19 +34,19 @@ Open up **Thonny** from the **Programming** menu.
 
 --- /task ---
 
-To begin with you are simple going to load an image and display it on your screen.
+To begin with, you are simply going to load an image and display it on your screen.
 
 --- task ---
 
 Right click on this image, and save it to your home folder on the Raspberry Pi.
 
-![an IR image of a park](images/park.png)
+![An infrared image of a park.](images/park.png)
 
 --- /task ---
 
 --- task ---
 
-Then in Thonny you can start by importing the two modules you will need to begin with.
+Then in Thonny, start by importing the two modules you will need to begin with.
 
 --- code ---
 ---
@@ -97,7 +97,7 @@ cv2.destroyAllWindows()
 
 --- task ---
 
-Now run your code. You should see the image appear on the screen. When you press a key it will disappear.
+Now run your code. You should see the image appear on the screen. When you press a key, it will disappear.
 
 --- /task ---
 
@@ -149,7 +149,7 @@ cv2.namedWindow('Original') # create window
 
 --- task ---
 
-As you will want to be displaying other images as well, you can turn the code you have written into a function, and call it. The function will take an **image object** and also a **string** that describes the image.
+As you will want to display other images as well, you can turn the code you have written into a function, and call it. The function will take an **image object** and also a **string** that describes the image.
 
 Here is the complete code, so far.
 
