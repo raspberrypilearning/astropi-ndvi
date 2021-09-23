@@ -41,7 +41,7 @@ def contrast_stretch(im):
 
 --- /task ---
 
-The image object called `park` is just a big list of numbers. The next task step is to find the largest and smallest of those numbers, using `numpy`.
+The image object called `park` is just a big list of numbers. The next step is to find the largest and smallest of those numbers, using `numpy`.
 
 --- task ---
 
@@ -63,7 +63,7 @@ def contrast_stretch(im):
 
 --- /task ---
 
-Now you need to set the maximum brightness and minimum brightness on the new image you are going to create. The brightest a pixel's colour can be is 255 and the lowest is 0.
+Now you need to set the maximum brightness and minimum brightness on the new image you are going to create. The brightest a pixel's colour can be is 255, and the lowest is 0.
 
 --- task ---
 
@@ -87,7 +87,7 @@ def contrast_stretch(im):
 
 --- /task ---
 
-Now some calculations need to be performed to change all the pixels in the image so that the image has the full range of contrasts from `0` to `255`.
+Now some calculations need to be performed to change all the pixels in the image, so that the image has the full range of contrasts from `0` to `255`.
 
 --- task ---
 
@@ -121,7 +121,7 @@ Now that you have a function to stretch the contrast of the image, you can conve
 
 --- task ---
 
-Call you `contrast_stretch` function and alter then display it using your `display` function.
+Call your `contrast_stretch` function, and alter then display it using your `display` function.
 
 --- code ---
 ---
@@ -139,11 +139,11 @@ display(contrasted, 'Contrasted original')
 
 There should be a noticable difference in the contrast of the two images now.
 
-![low and high contrast images of the park image](images/low-high-contrast.png)
+![Low and high contrast images of the park image.](images/low-high-contrast.png)
 
 --- task ---
 
-You can save your high contrast image by adding a single line to the end of your code, so that you can compare the two images in your file browser. It will be called `contrasted.png`
+You can save your high contrast image by adding a single line to the end of your code, so that you can compare the two images in your file browser. It will be called `contrasted.png`.
 
 --- code ---
 ---
