@@ -73,7 +73,7 @@ With your Raspberry Pi turned off, connect your camera and then restart your Ras
 
 --- /task ---
 
-The first step is to set up the camera to take a photograph. Resolutions of different cameras vary. If you're using the Raspberry Pi NoIR camera, then you want to use a resolution of `1920x1080`. If you are using the HQ camera, then you can use a resolution of `2582x1952`.
+The first step is to set up the camera to take a photograph. Resolutions of different cameras vary. If you're using the Raspberry Pi NoIR camera, then you want to use a resolution of `1920x1080`. If you are using the Raspberry Pi HQ Camera, then you can use a resolution of `2582x1952`.
 
 --- task ---
 
