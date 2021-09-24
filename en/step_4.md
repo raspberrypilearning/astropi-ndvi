@@ -63,7 +63,7 @@ def contrast_stretch(im):
 
 --- /task ---
 
-Now you need to set the maximum brightness and minimum brightness on the new image you are going to create. The brightest a pixel's colour can be is 255, and the lowest is 0.
+Now you need to set the maximum brightness and minimum brightness on the new image you are going to create. The brightest a pixel's colour can be is `255`, and the lowest is `0`.
 
 --- task ---
 
@@ -87,7 +87,7 @@ def contrast_stretch(im):
 
 --- /task ---
 
-Now some calculations need to be performed to change all the pixels in the image, so that the image has the full range of contrasts from 0 to 255.
+Now some calculations need to be performed to change all the pixels in the image, so that the image has the full range of contrasts from `0` to `255`.
 
 --- task ---
 
