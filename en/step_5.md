@@ -2,8 +2,8 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now that you have a high contrast image, it's time to do the NDVI calculations. This will take the all the blue pixels and make them brighter and make all the red pixels darker, leaving an image that will be black and white, with the brightest pixels indicating healthy plants and the darkest pixels indicating unhealthy plants or an absence of plants.
-![4 images side by side, the original park, the contrasted park, the ndvi and the contrasted ndvi](images/ndvi-contrasts.png)
+Now that you have a high contrast image, it's time to do the NDVI calculations. This will take all the blue pixels and make them brighter, and make all the red pixels darker, leaving an image that will be black and white. The brightest pixels in the image indicate healthy plants, and the darkest pixels indicate unhealthy plants or an absence of plants.
+![Four images side by side: the original park, the contrasted park, the NDVI, and the contrasted NDVI.](images/ndvi-contrasts.png)
 </div>
 </div>
 
@@ -38,7 +38,7 @@ def calc_ndvi(image):
 
 --- /task ---
 
-To adjust the pixels in the image and only work with red and blue, the image needs splitting into it's three seperate channels. `r` for red, `g` for green, and `b` for blue.
+To adjust the pixels in the image and only work with red and blue, the image needs splitting into its three seperate channels. `r` for red, `g` for green, and `b` for blue.
 
 --- task ---
 
@@ -58,11 +58,11 @@ def calc_ndvi(image):
 
 --- /task ---
 
-Now the red and blue channels need to be added together and stored as `bottom`. The blue channel can then have the red channel subtracted (remember that red would mean unhealthy plants or no plants), and then divided by the `bottom` calulation. Becuase we're doing a division, we also need to make sure that none of our divisors are `0` or there will be an error.
+Now the red and blue channels need to be added together and stored as `bottom`. The blue channel can then have the red channel subtracted (remember that red would mean unhealthy plants or no plants), and then divided by the `bottom` calculation. Because we're doing a division, we also need to make sure that none of our divisors are `0`, or there will be an error.
 
 --- task ---
 
-Add these lines to you function to perform the calculation.
+Add these lines to your function to perform the calculation.
 
 --- code ---
 ---
@@ -84,7 +84,7 @@ def calc_ndvi(image):
 
 --- /task ---
 
-Now that you have a function to calculate NDVI, you can pass in the contrasted image, display it and save it.
+Now that you have a function to calculate NDVI, you can pass in the contrasted image, display it, and save it.
 
 --- task ---
 
@@ -109,7 +109,7 @@ cv2.imwrite('ndvi.png', ndvi)
 
 --- task ---
 
-If you  have a look at your NDVI image, it will probably be pretty dark, although you might catch patches of brighter pixels. To once again enhance the image, it can be run through the `contrast_stretch` function.
+If you have a look at your NDVI image, it will probably be pretty dark, although you might catch patches of brighter pixels. To once again enhance the image, it can be run through the `contrast_stretch` function.
 
 --- code ---
 ---
