@@ -2,8 +2,8 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For this step you will need to have a Raspberry Pi HQ Camera and some filters, or the Raspberry Pi Noir Camera module. You can then take your own NDVI images, or even enter Mission Space Lab and take NDVI images from the International Space Station.
-![dying plant shown with all the various stages of capture](images/dying_plant.png)
+For this step you will need to have a Raspberry Pi HQ Camera and some filters, or the Raspberry Pi NoIR Camera Module. You can then take your own NDVI images, or even enter Mission Space Lab and take NDVI images from the ISS.
+![Dying plant shown with all the various stages of capture.](images/dying_plant.png)
 </div>
 </div>
 
@@ -29,21 +29,21 @@ title: Converting your Raspberry Pi HQ Camera with an R26 Red filter
 
 - You will need to purchase a sheet of [Rosculux 26: Light Red filters](https://www.pnta.com/expendables/gels/roscolux/roscolux-26-light-red/).
 - Follow [this guide](https://www.raspberrypi.org/documentation/hardware/camera/hqcam_filter_removal.md) to remove the IR filter from your Raspberry Pi HQ Camera. **This will void the warranty**. 
-- The red filter can be taped to the front of your HQ camera lens or held in place with a 3D printed part
+- The red filter can be taped to the front of your HQ camera lens or held in place with a 3D printed part.
 - You can download the [STL](images/lens_holder.stl) [OBJ](images/lens_holder.obj) or [SVG](images/lens_holder.svg) and print or laser cut the part yourself.
 
-![a red filter attached to a 3D printed plastic ring](images/lens_holder_1.png)
-![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/lens_holder_2.png)
-![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring](images/lens_holder_3.png)
+![A red filter attached to a 3D printed plastic ring.](images/lens_holder_1.png)
+![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring.](images/lens_holder_2.png)
+![HQ camera with a red filter over the lens, held in place by a 3D printed plastic ring.](images/lens_holder_3.png)
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Using the Raspberry Pi NoIR Camera module
+title: Using the Raspberry Pi NoIR Camera Module
 ---
 
-You can use the Raspberry Pi NoIR camera module for NDVI images, however, you will need to change one of your lines of code. This is because the Pi NoIR camera uses a blue, instead of a red filter. The red filter is better for capturing NDVI images, but the same kind of effect can be accomplished with a Pi NoIR. Instead of subtracting the red channel from the image, you subtract the blue channel.
+You can use the Raspberry Pi NoIR Camera Module for NDVI images, however, you will need to change one of your lines of code. This is because the Raspberry Pi NoIR Camera uses a blue, instead of a red filter. The red filter is better for capturing NDVI images, but the same kind of effect can be accomplished with a Raspberry Pi NoIR. Instead of subtracting the red channel from the image, you subtract the blue channel.
 
 The line is highlighted and commented in the script below.
 
@@ -65,7 +65,7 @@ def calc_ndvi(image):
 
 --- /collapse ---
 
-If you need to know how to connect a camera module to the Raspberry Pi, and learn the basics of using the PiCamera module, you can have a look at our [Getting started with the camera module guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera).
+If you need to know how to connect a Camera Module to the Raspberry Pi, and learn the basics of using the PiCamera module, you can have a look at our [Getting started with the camera module guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera).
 
 --- task ---
 
@@ -73,7 +73,7 @@ With your Raspberry Pi turned off, connect your camera and then restart your Ras
 
 --- /task ---
 
-The first step is to set up the camera to take a photograph. Resolutions of different cameras vary. If you're using the Pi Noir camera then you want to use a resolution of `1920x1080`. If you are using the HQ camera, then you can use a resolution of `2582x1952`.
+The first step is to set up the camera to take a photograph. Resolutions of different cameras vary. If you're using the Raspberry Pi NoIR camera, then you want to use a resolution of `1920x1080`. If you are using the HQ camera, then you can use a resolution of `2582x1952`.
 
 --- task ---
 
@@ -129,7 +129,7 @@ original = stream.array
 
 --- /task ---
 
-Instead of the contrast_stretch function being run on the `original` image object that you loaded, it will now be run on the saved stream, which is also called `original`
+Instead of the contrast_stretch function being run on the `original` image object that you loaded, it will now be run on the saved stream, which is also called `original`.
 
 --- task ---
 
@@ -151,7 +151,7 @@ cv2.imwrite('original.png', original)
 --- /task ---
 
 This image shows all the captures of a dying basil plant. You can see that at the base of the plant, the leaves are either dying or dead, where as near the top, there are still some healthy leaves.
-![dying plant shown with all the various stages of capture](images/dying_plant.png)
+![Dying plant shown with all the various stages of capture.](images/dying_plant.png)
 
 --- collapse ---
 ---
@@ -165,7 +165,7 @@ This is a known issue but there is an easy fix.
 ```bash
 sudo nano /boot/config.txt
 ```
-- Add the following line to the bottom of the file `awb_auto_is_greyworld=1`
+- Add the following line to the bottom of the file `awb_auto_is_greyworld=1`.
 - Press **Ctrl + O** to save the file and **Ctrl + X** to exit nano.
 - You can now close the terminal window, restart your Raspberry Pi and try to take pictures again.
 
