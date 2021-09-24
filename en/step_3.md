@@ -8,7 +8,7 @@ To turn an image from one that has had no IR filter, to an NDVI image, you're go
 
 --- task ---
 
-On your Raspberry Pi, open a terminal by pressing and holding the **Ctrl** and **Alt** keys, and then pressing the **t** key.
+On your Raspberry Pi, open a terminal by pressing and holding the <kbd>Ctrl</kbd> and <kbd>Alt</kbd> keys, and then pressing the <kbd>t</kbd> key.
 
 --- /task ---
 
