@@ -87,7 +87,7 @@ def contrast_stretch(im):
 
 --- /task ---
 
-Now some calculations need to be performed to change all the pixels in the image, so that the image has the full range of contrasts from `0` to `255`.
+Now some calculations need to be performed to change all the pixels in the image, so that the image has the full range of contrasts from 0 to 255.
 
 --- task ---
 
