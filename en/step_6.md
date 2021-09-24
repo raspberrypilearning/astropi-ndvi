@@ -3,15 +3,15 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 You now have an NDVI image, but it's difficult for humans to tell the difference between different shades of grey. You can run the image through a colour mapping process that will turn really bright pixels to the colour red and dark pixels to the colour blue.
-![5 images showing process from original through to colour mapped.](images/full_montage.png)
+![Five images showing the process from original through to colour mapped image.](images/full_montage.png)
 </div>
 </div>
 
-A colour map converts pixels in an image from one colour into another. The NDVI image is currently **grayscale**, which means it's black and white, with all the shades inbetween.
+A colour map converts pixels in an image from one colour into another. The NDVI image is currently **greyscale**, which means it's black and white, with all the shades in-between.
 
-Because the image is grayscale, each pixel can be represented by a single number from 0 to 255.
+Because the image is greyscale, each pixel can be represented by a single number from 0 to 255.
 
-The [fastie](https://storage.googleapis.com/publiclab-production/public/system/images/photos/000/006/146/original/NDVI_VGYRM-lut.txt) colour map takes dark pixels and makes them white, and then the brighter the original pixels, the further along the spectrum the colours are shifted. So dark grey pixels become blue, while bright white pixels become red.
+The [fastie](https://storage.googleapis.com/publiclab-production/public/system/images/photos/000/006/146/original/NDVI_VGYRM-lut.txt) colour map takes dark pixels and makes them white. Then the brighter the original pixels, the further along the spectrum the colours are shifted. So dark grey pixels become blue, while bright white pixels become red.
 
 --- task ---
 
@@ -38,7 +38,7 @@ from fastiecm import fastiecm
 
 --- /task ---
 
-The current image, that you have saved as `ndvi_contrasted` is not suitable for colour mapping. The numbers stored in the `numpy` array are currently all `floats` or what is commonly known decimal numbers. They all need converting to whole numbers, or `integers` between `0` and `255`. The `numpy` library can luckily do this for us.
+The current image, that you have saved as `ndvi_contrasted` is not suitable for colour mapping. The numbers stored in the `numpy` array are currently all `floats` or what is commonly known as decimal numbers. They all need converting to whole numbers, or `integers` between `0` and `255`. The `numpy` library can luckily do this for us.
 
 --- task ---
 
