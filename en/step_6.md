@@ -9,7 +9,7 @@ You now have an NDVI image, but it's difficult for humans to tell the difference
 
 A colour map converts pixels in an image from one colour into another. The NDVI image is currently **greyscale**, which means it's black and white, with all the shades in-between.
 
-Because the image is greyscale, each pixel can be represented by a single number from 0 to 255.
+Because the image is greyscale, each pixel can be represented by a single number from `0` to `255`.
 
 The [fastie](https://storage.googleapis.com/publiclab-production/public/system/images/photos/000/006/146/original/NDVI_VGYRM-lut.txt) colour map takes dark pixels and makes them white. Then the brighter the original pixels, the further along the spectrum the colours are shifted. So dark grey pixels become blue, while bright white pixels become red.
 
