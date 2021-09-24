@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For this step you will need to have a Raspberry Pi HQ Camera and some filters, or the Raspberry Pi NoIR Camera Module. You can then take your own NDVI images, or even enter Mission Space Lab and take NDVI images from the ISS.
+For this step you will need to have a Raspberry Pi HQ Camera and some filters, or the Raspberry Pi NoIR Camera Module. You can then take your own NDVI images, or even enter Mission Space Lab and take NDVI images from the International Space Station.
 ![Dying plant shown with all the various stages of capture.](images/dying_plant.png)
 </div>
 </div>
