@@ -129,7 +129,7 @@ original = stream.array
 
 --- /task ---
 
-Instead of the contrast_stretch function being run on the `original` image object that you loaded, it will now be run on the saved stream, which is also called `original`.
+Instead of the `contrast_stretch` function being run on the `original` image object that you loaded, it will now be run on the saved stream, which is also called `original`.
 
 --- task ---
 
@@ -160,13 +160,13 @@ title: Debug - the images from my camera appear red
 
 This is a known issue but there is an easy fix.
 
-- Press **Ctrl + Alt + t** to open up a terminal window.
+- Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd> to open up a terminal window.
 - Type the following to edit your `config.txt`:
 ```bash
 sudo nano /boot/config.txt
 ```
 - Add the following line to the bottom of the file `awb_auto_is_greyworld=1`.
-- Press **Ctrl + O** to save the file and **Ctrl + X** to exit nano.
+- Press <kbd>Ctrl</kbd> + <kbd>O</kbd> to save the file and <kbd>Ctrl</kbd> + <kbd>X</kbd> to exit nano.
 - You can now close the terminal window, restart your Raspberry Pi and try to take pictures again.
 
 --- /collapse ---
