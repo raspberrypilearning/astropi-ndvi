@@ -2,8 +2,8 @@ title: explore-project-template
 hero_image: images/banner.png
 description: explore-project-template description
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
