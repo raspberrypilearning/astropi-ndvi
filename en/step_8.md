@@ -15,6 +15,6 @@ Here is an example of NDVI images from the Astro Pi unit called Izzy. Izzy has a
 
 ![Collection of images from the Izzy unit, showing the original images, contrasted images, NDVI images, and colour mapped images.](images/astropi_ndvi.png)
 
-If you would like to practise using NDVI on images taken from the ISS, you can use the image below, or look at the images in the [resources folder for this project](https://rpf.io/p/en/astropi-ndvi-get){:target="_blank"}.
+If you would like to practise using NDVI on images taken from the ISS, you can use the image below, or look at the images in the [resources folder for this project](https://rpf.io/p/en/astropi-ndvi-go){:target="_blank"}.
 
 ![Image of the Earth taken with a Raspberry Pi NoIR camera from the ISS.](images/astropi_pinoir.png)
