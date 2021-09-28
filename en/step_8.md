@@ -2,7 +2,9 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-[Mission Space Lab](https://astro-pi.org/mission-space-lab/) is a competition run by the Raspberry Pi Foundation for European Space Agency member countries and Canada. The competition involves writing code for one of the two Astro Pi units on the ISS. NDVI is a great way to use the camera on one the Astro Pi units to measure plant health on Earth.
+Mission Space Lab is part of the European Astro Pi Challenge, an ESA Education project run in collaboration with the Raspberry Pi Foundation for young people aged under 19 in [ESA Member States](https://astro-pi.org/mission-space-lab/eligibility), Slovenia, Latvia, Lithuania, Canada and Malta.
+
+Mission Space Lab involves writing a computer program to run on one of the two Astro Pi units on the International Space Station, in order to conduct a scientific experiment exploring life on Earth or life in space. NDVI is a great way to use the camera on the Astro Pi to measure plant health on Earth.
 </div>
 <div>
 ![the astro pi logo](images/astro_pi_logo.png){:width="300px"}
