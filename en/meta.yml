@@ -1,6 +1,6 @@
-title: Capture plant health with NDVI and the Raspberry Pi
+title: Capture plant health with NDVI and Raspberry Pi
 hero_image: images/banner.png
-description: explore-project-template description
+description: Use an infrared camera module with a Raspberry Pi to measure the health of plants.
 version: 4
 listed: true
 copyedit: true
