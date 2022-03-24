@@ -118,7 +118,7 @@ line_highlights: 6-8
 ---
 image = cv2.imread('/home/pi/park.png') # load image
 image = np.array(original, dtype=float)/float(255) #convert to an array
-shape = original.shape
+shape = image.shape
 height = int(shape[0]/2)
 width = int(shape[1]/2)
 cv2.namedWindow('Original') # create window
@@ -138,7 +138,7 @@ line_numbers: true
 line_number_start: 6
 line_highlights: 10
 ---
-shape = original.shape
+shape = image.shape
 height = in(shape[0] / 2)
 width = int(shape[1] / 2)
 image = cv2.resize(image, (width, height))
