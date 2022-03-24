@@ -1,24 +1,21 @@
+---
 title: Capture plant health with NDVI and Raspberry Pi
 hero_image: images/banner.png
-description: Use a Raspberry Pi and camera to measure the health of plants using infrared light.
+description: Use a Raspberry Pi and camera to measure the health of plants using infrared
+  light.
 version: 4
 listed: true
 copyedit: true
-last_tested: "2021-03-26"
+last_tested: '2021-03-26'
 steps:
-  - title: Introduction
-  - title: What is NDVI?
-  - title: Load and display images with Python
-  - title: Increasing the contrast
-  - title: Calculating NDVI
-  - title: Colour mapping
-  - title: Create your own NDVI images
-  - title: Mission Space Lab
-  - title: What next?
- # - title: Reflection
-  #  knowledge_quiz:
-  #   version: 1
-  #    questions: 3
-  #    passing_score: 3
- # - title: Upgrade your project
- # - title: What next?
+- title: Introduction
+  completion: engaged
+- title: What is NDVI?
+- title: Load and display images with Python
+- title: Increasing the contrast
+- title: Calculating NDVI
+- title: Colour mapping
+- title: Create your own NDVI images
+  completion: internal
+- title: Mission Space Lab
+- title: What next?
