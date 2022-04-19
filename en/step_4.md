@@ -22,7 +22,7 @@ line_highlights: 19
 import cv2
 import numpy as np
 
-original = cv2.imread('/home/pi/park.png')
+original = cv2.imread('/home/username/park.png')
 
 
 def display(image, image_name):
