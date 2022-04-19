@@ -72,7 +72,7 @@ The next stage is to load an image and display it on the screen.
 - `cv2.destroyAllWindows()` closes the window when the key has been pressed
 
 --- task ---
-Here is the code you will need.
+Here is the code you will need. Don't forget to use your own `username` for you home directory.
 
 --- code ---
 ---
@@ -85,7 +85,7 @@ line_highlights: 4-9
 import cv2
 import numpy as np
 
-image = cv2.imread('/home/pi/park.png') # load image
+image = cv2.imread('/home/username/park.png') # load image
 image = np.array(image, dtype=float)/float(255) #convert to an array
 cv2.namedWindow('Original') # create window
 cv2.imshow('Original', image) # display image
@@ -116,7 +116,7 @@ line_numbers: true
 line_number_start: 4
 line_highlights: 6-8
 ---
-image = cv2.imread('/home/pi/park.png') # load image
+image = cv2.imread('/home/username/park.png') # load image
 image = np.array(original, dtype=float)/float(255) #convert to an array
 shape = image.shape
 height = int(shape[0]/2)
@@ -164,7 +164,7 @@ line_highlights: 7-19
 import cv2
 import numpy as np
 
-original = cv2.imread('/home/pi/park.png')
+original = cv2.imread('/home/username/park.png')
 
 
 def display(image, image_name):
