@@ -9,13 +9,14 @@ copyedit: true
 last_tested: '2021-03-26'
 steps:
 - title: Introduction
-  completion: engaged
 - title: What is NDVI?
 - title: Load and display images with Python
+  completion:
+  - engaged
 - title: Increasing the contrast
 - title: Calculating NDVI
 - title: Colour mapping
 - title: Create your own NDVI images
-  completion: internal
+  completion:
+  - internal
 - title: Mission Space Lab
-#- title: What next?
