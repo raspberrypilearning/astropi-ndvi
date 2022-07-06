@@ -17,7 +17,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 19
-line_highlights: 32
+line_highlights: 33
 ---
 def contrast_stretch(im):
     in_min = np.percentile(im, 5)
@@ -49,8 +49,8 @@ Add this line to your function.
 language: python
 filename: 
 line_numbers: true
-line_number_start: 32
-line_highlights: 33
+line_number_start: 33
+line_highlights: 34
 ---
 def calc_ndvi(image):
     b, g, r = cv2.split(image)
@@ -69,8 +69,8 @@ Add these lines to your function to perform the calculation.
 language: python
 filename: 
 line_numbers: true
-line_number_start: 32
-line_highlights: 34-37
+line_number_start: 33
+line_highlights: 34-38
 ---
 def calc_ndvi(image):
     b, g, r = cv2.split(image)
