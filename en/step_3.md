@@ -136,7 +136,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 6
-line_highlights: 10
+line_highlights: 9
 ---
 shape = image.shape
 height = in(shape[0] / 2)
