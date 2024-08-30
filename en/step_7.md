@@ -90,13 +90,12 @@ line_highlights: 4,5,7,8,9,10
 import cv2
 import numpy as np
 from fastiecm import fastiecm
-from picamera import PiCamera
-import picamera.array
+from picamzero import Camera
 
-cam = PiCamera()
+cam = Camera()
 cam.rotation = 180
-# cam.resolution = (1920, 1080) # Uncomment if using a Pi Noir camera
-cam.resolution = (2592, 1952) # Comment this line if using a Pi Noir camera
+# cam.still_size = (1920, 1080) # Uncomment if using a Pi Noir camera
+cam.still_size = (2592, 1952) # Comment this line if using a Pi Noir camera
 
 # original = cv2.imread('park.png') #Comment out this line, as no longer used
 --- /code ---
@@ -117,12 +116,11 @@ line_numbers: true
 line_number_start: 7
 line_highlights: 11-13
 ---
-cam = PiCamera()
+cam = Camera()
 cam.rotation = 180
-# cam.resolution = (1920, 1080) # Uncomment if using a Pi Noir camera
-cam.resolution = (2592, 1952) # Comment this line if using a Pi Noir camera
-stream = picamera.array.PiRGBArray(cam)
-cam.capture(stream, format='bgr', use_video_port=True)
+# cam.still_size = (1920, 1080) # Uncomment if using a Pi Noir camera
+cam.still_size = (2592, 1952) # Comment this line if using a Pi Noir camera
+stream = cam.capture_array()
 original = stream.array
 # original = cv2.imread('park.png') #Comment out this line, as no longer used
 --- /code ---
