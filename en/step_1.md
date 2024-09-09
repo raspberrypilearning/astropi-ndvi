@@ -1,8 +1,6 @@
 ## Introduction
 
-[[[camera-bullseye]]]
-
-In this project, you will learn how to use images, taken with a camera fitted with special filters, to measure the health of plants. If you have access to a [Raspberry Pi High Quality Camera](https://www.raspberrypi.org/products/raspberry-pi-high-quality-camera/), you will also learn how to modify it so the camera can be used to take these photos. If you have access to a [Pi NoIR camera module](https://www.raspberrypi.org/products/pi-noir-camera-v2/), this can be used too.
+Learn how to fit with special filters, so that you can take images to measure the health of plants. 
 
 ![Three images showing the three stages of processing photos to get a measure of plant health.](images/montage.png)
 
@@ -15,6 +13,24 @@ You will:
 + Convert an image taken with a modified camera so that it can be used to measure NDVI
 + Modify a Raspberry Pi camera module, so it can be used to take NDVI images
 
-You will need:
+--- collapse ---
+---
+title: You will need
+---
+
+### Hardware
 + A Raspberry Pi computer
-+ Optionally a modified Raspberry Pi HQ camera or a Raspberry Pi NoIR camera module
++ [Raspberry Pi High Quality Camera](https://www.raspberrypi.org/products/raspberry-pi-high-quality-camera/) or [Pi NoIR camera module](https://www.raspberrypi.org/products/pi-noir-camera-v2/).
+
+### Software
+You will need to run the following commands on your Raspberry Pi to install the required software libraries:
+
+
+--- code ---
+---
+language: linux
+line_numbers: false
+---
+sudo apt update
+sudo apt install python3-picamzero libatlas-base-dev python3-numpy python3-opencv
+--- /code ---
