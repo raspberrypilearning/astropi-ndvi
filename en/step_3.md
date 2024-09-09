@@ -2,43 +2,32 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-To turn an image from one that has had no IR filter, to an NDVI image, you're going to use a graphics module called OpenCV.
+To turn an image from one that has had no IR filter, to an NDVI image, you can use a graphics module called OpenCV.
 </div>
 </div>
 
+
+This project requires some extra Python packages to perform some calculations on the images. 
+
 --- task ---
+- Open a terminal and type the following commands to install the required software.
 
-On your Raspberry Pi, open a terminal by pressing and holding the <kbd>Ctrl</kbd> and <kbd>Alt</kbd> keys, and then pressing the <kbd>t</kbd> key.
-
+--- code ---
+---
+language: linux
+line_numbers: false
+---
+sudo apt update
+sudo apt install python3-picamzero libatlas-base-dev python3-numpy python3-opencv
+--- /code ---
+--- /collapse ---
 --- /task ---
 
-This project requires some extra Python packages to perform some calculations on the images.
+To begin with, you will load an image and display it on your screen.
 
 --- task ---
 
-In the terminal type:
-
-```bash
-sudo pip3 install -U numpy
-sudo pip3 install opencv-python
-sudo apt install libatlas-base-dev
-```
-
-The packages should install after a few minutes.
-
---- /task ---
-
---- task ---
-
-Open up **Thonny** from the **Programming** menu.
-
---- /task ---
-
-To begin with, you are simply going to load an image and display it on your screen.
-
---- task ---
-
-Right click on this image, and save it to your home folder on your Raspberry Pi.
+Right click on this image, and save it to the home folder on your Raspberry Pi.
 
 ![An infrared image of a park.](images/park.png)
 
@@ -46,12 +35,17 @@ Right click on this image, and save it to your home folder on your Raspberry Pi.
 
 --- task ---
 
-Then in Thonny, start by importing the two modules you will need to begin with.
+Open **Thonny** from the **Programming** menu.
+
+--- /task ---
+
+--- task ---
+
+Write some code to import the two modules you will need to begin with. Save your file as `ndvi.py`. 
 
 --- code ---
 ---
 language: python
-filename: ndvi.py
 line_numbers: true
 line_number_start: 1
 line_highlights: 1-2
