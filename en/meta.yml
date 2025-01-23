@@ -20,3 +20,5 @@ steps:
   completion:
   - internal
 - title: Mission Space Lab
+  completion:
+  - external
