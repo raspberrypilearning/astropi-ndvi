@@ -1,6 +1,6 @@
 ## Introduction
 
-Learn how to fit with special filters, so that you can take images to measure the health of plants. 
+Learn how photography with special filters allows you to take images to measure the health of plants.
 
 ![Three images showing the three stages of processing photos to get a measure of plant health.](images/montage.png)
 
