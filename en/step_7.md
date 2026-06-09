@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For this step you will need to have a Raspberry Pi HQ Camera and some filters, or the Raspberry Pi NoIR Camera Module. You can then take your own NDVI images, or even enter Mission Space Lab and take NDVI images from the International Space Station.
+For this step you will need to have a Raspberry Pi HQ Camera and some filters, or the [Raspberry Pi NoIR Camera Module](https://www.raspberrypi.com/products/pi-noir-camera-v2/). You can then take your own NDVI images, or even enter [Mission Space Lab](https://astro-pi.org/mission-space-lab) and take NDVI images from the International Space Station.
 ![Dying plant shown with all the various stages of capture.](images/dying_plant.png)
 </div>
 </div>
@@ -27,7 +27,7 @@ title: Converting your Raspberry Pi HQ Camera with a RED + Near IR filter
 title: Converting your Raspberry Pi HQ Camera with an R26 Red filter
 ---
 
-- You will need to purchase a sheet of [Rosculux 26: Light Red filters](https://www.pnta.com/expendables/gels/roscolux/roscolux-26-light-red/).
+- You will need to purchase a sheet of [Rosculux 26: Light Red filters](https://stagedepot.co.uk/lighting/lighting-gel/colour-effect/026-bright-red-lighting-gel-1).
 - Follow [this guide](https://www.raspberrypi.org/documentation/hardware/camera/hqcam_filter_removal.md) to remove the IR filter from your Raspberry Pi HQ Camera. **This will void the warranty**. 
 - The red filter can be taped to the front of your HQ camera lens or held in place with a 3D printed part.
 - You can download the [STL](images/lens_holder.stl) [OBJ](images/lens_holder.obj) or [SVG](images/lens_holder.svg) and print or laser cut the part yourself.
@@ -85,7 +85,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 
-line_highlights: 4,5,7,8,9,10
+line_highlights: 4, 5, 7, 8, 9, 10
 ---
 import cv2
 import numpy as np
@@ -102,7 +102,7 @@ cam.still_size = (2592, 1952) # Comment this line if using a Pi Noir camera
 
 --- /task ---
 
-Rather than just capture an image with the camera and save it to the SD card, the image is going to be captured as an array of pixel data, so that it can be used by `numpy` and `OpenCV`.
+Rather than just capturing an image with the camera and saving it to the SD card, the image is going to be captured as an array of pixel data, so that it can be used by `numpy` and `OpenCV`.
 
 --- task ---
 
