@@ -10,7 +10,8 @@ To turn an image from one that has had no IR filter, to an NDVI image, you can u
 This project requires some extra Python packages to perform some calculations on the images. 
 
 --- task ---
-- Open a terminal and type the following commands to install the required software.
+
+Open a terminal and type the following commands to install the required software.
 
 --- code ---
 ---
@@ -65,7 +66,7 @@ The next stage is to load an image and display it on the screen.
 - `cv2.destroyAllWindows()` closes the window when the key has been pressed
 
 --- task ---
-Here is the code you will need. Don't forget to use your own `username` for you home directory.
+Here is the code you will need. Don't forget to use your own `username` for your home directory.
 
 --- code ---
 ---
