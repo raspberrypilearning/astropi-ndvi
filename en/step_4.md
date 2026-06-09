@@ -3,7 +3,7 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 Contrast is the difference between the brightness or colour in an image. The image below has been split so that the left half has a low contrast and the right side has a high contrast. You need to **increase** the contrast of your image for NDVI.
-![An image of a lake with a treeline and a water tower on the far side, with the right hand side of the image contrast corrected[(images/Photo_editing_contrast_correction.jpg)
+![An image of a lake with a treeline and a water tower on the far side, with the right hand side of the image contrast corrected](images/Photo_editing_contrast_correction.jpg)
 </div>
 </div>
 
