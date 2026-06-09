@@ -21,6 +21,7 @@ title: You will need
 ### Hardware
 + A Raspberry Pi computer
 + [Raspberry Pi High Quality Camera](https://www.raspberrypi.org/products/raspberry-pi-high-quality-camera/) or [Pi NoIR camera module](https://www.raspberrypi.org/products/pi-noir-camera-v2/).
++ [Red and 850nm NIR filter.](https://midopt.com/filters/db660850/) or [Rosculux 26 Light Red filter](https://stagedepot.co.uk/lighting/lighting-gel/colour-effect/026-bright-red-lighting-gel-1)
 
 ### Software
 You will need to run the following commands on your Raspberry Pi to install the required software libraries:
