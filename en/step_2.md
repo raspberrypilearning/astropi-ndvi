@@ -24,7 +24,7 @@ There are also other forms of light that you might have heard of, such as microw
 
 Chlorophyll can only use some of the light from the sun to perform photosynthesis. It can't use green light, so this is reflected away, and the reason why plants look green.
 
-![Graph showing how two types of chlorophyll absorb light of differing frequencies](Chlorophyll_ab_spectra-en.png)
+![Graph showing how two types of chlorophyll absorb light of differing frequencies](images/Chlorophyll_ab_spectra-en.png)
 
 Plants also don't like infrared radiation very much as it makes them heat up, in the same way you wouldn't want to hold your hands in front of a fire for too long. Plants have evolved to reflect as much infrared light as they can.
 
