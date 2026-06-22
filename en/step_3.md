@@ -19,7 +19,7 @@ language: linux
 line_numbers: false
 ---
 sudo apt update
-sudo apt install python3-picamzero libatlas-base-dev python3-numpy python3-opencv
+sudo apt install python3-picamzero libopenblas-dev python3-numpy python3-opencv
 --- /code ---
 --- /task ---
 
