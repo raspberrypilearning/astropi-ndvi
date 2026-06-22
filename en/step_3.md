@@ -153,7 +153,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 7-19
+line_highlights: 4, 7-19
 ---
 import cv2
 import numpy as np
