@@ -85,7 +85,7 @@ language: python
 filename: ndvi.py
 line_numbers: true
 line_number_start: 
-line_highlights: 4, 5, 7, 8, 9, 10
+line_highlights: 4, 5-9
 ---
 import cv2
 import numpy as np
