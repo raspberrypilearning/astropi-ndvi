@@ -137,7 +137,7 @@ display(contrasted, 'Contrasted original')
 --- /code ---
 --- /task ---
 
-There should be a noticable difference in the contrast of the two images now.
+Press space after the original image is shown to show the contrasted image. There should be a noticable difference in the contrast of the two images now.
 
 ![Low and high contrast images of the park image.](images/low-high-contrast.png)
 
