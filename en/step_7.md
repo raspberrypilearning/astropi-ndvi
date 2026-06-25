@@ -120,8 +120,7 @@ cam = Camera()
 cam.rotation = 180
 # cam.still_size = (1920, 1080) # Uncomment if using a Pi Noir camera
 cam.still_size = (2592, 1952) # Comment this line if using a Pi Noir camera
-stream = cam.capture_array()
-original = stream.array
+original = cam.capture_array()
 # original = cv2.imread('park.png') #Comment out this line, as no longer used
 --- /code ---
 
